@@ -151,6 +151,13 @@
          
         <a-model src="models/ghost.obj" scale="1 1 1" position="0 0.35 7.6" rotation="0 90 0">
         <a-sound src="sounds/scarySfx.mp3" autoplay ="true"></a-sound>
+        <!-- Sound -->
+        <a-assets>
+        <audio id="river" src="scarySfx.mp3" preload="auto"></audio>
+        </a-assets>
+          <a-entity sound = "src: #river"></a-entity>
+
+  <a-entity sound="src: #river"></a-entity>
          </a-model>
          <!-- Lighting and background -->
          <a-sky color="white"></a-sky>
