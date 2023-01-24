@@ -29,7 +29,7 @@
             
          </a-entity>
          <!-- Box in the center -->
-         <a-entity geometry=" primitive: box; depth: 0.1 height : 6 ; width : 6" position="0 5 0" material="shader: standard; src: url(images/Start-up.png)"></a-entity>
+         <a-entity geometry=" primitive: box; depth: 0.1 height : 6 ; width : 6" position="0 5 0" material="shader: standard; src: url(images/Start-up.png)" sound="src: #scary; on: click"></a-entity>
          <a-entity scale = "4 4 4" bmfont-text = "text: Press Start if you Dare! ; color: red ; size : 1.5; height : 0.5" position= "0 4 0"></a-entity>
          
          <!-- Front Back Walls -->
@@ -153,9 +153,9 @@
       
         <!-- Sound -->
         <a-assets>
-        <audio id="river" src="scarySfx.mp3" preload="auto"></audio>
+        <audio id="scary" src="scarySfx.mp3" preload="auto"></audio>
         </a-assets>
-          <a-entity sound = "src: #river"></a-entity>
+          <a-entity sound = "src: #scary"></a-entity>
 
   <a-entity sound="src: #river"></a-entity>
          </a-model>
